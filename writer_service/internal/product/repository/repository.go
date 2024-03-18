@@ -2,7 +2,8 @@ package repository
 
 import (
 	"context"
-	"github.com/AleksK1NG/cqrs-microservices/writer_service/internal/models"
+
+	"github.com/herhu/Microservices-PR/writer_service/internal/models"
 	uuid "github.com/satori/go.uuid"
 )
 

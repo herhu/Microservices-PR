@@ -2,10 +2,11 @@ package queries
 
 import (
 	"context"
-	"github.com/AleksK1NG/cqrs-microservices/pkg/logger"
-	"github.com/AleksK1NG/cqrs-microservices/writer_service/config"
-	"github.com/AleksK1NG/cqrs-microservices/writer_service/internal/models"
-	"github.com/AleksK1NG/cqrs-microservices/writer_service/internal/product/repository"
+
+	"github.com/herhu/Microservices-PR/pkg/logger"
+	"github.com/herhu/Microservices-PR/writer_service/config"
+	"github.com/herhu/Microservices-PR/writer_service/internal/models"
+	"github.com/herhu/Microservices-PR/writer_service/internal/product/repository"
 )
 
 type GetProductByIdHandler interface {

@@ -1,5 +1,12 @@
 ### Golang CQRS Kafka gRPC Postgresql MongoDB Redis microservices example 👋
 
+Im Using this example to learn new technologies like kafka and grpc.
+
+The challenge is upgrade the version of Golang and libraries, 
+Improve the quality of security, add testing and create pipelines for CI/CD.
+
+Creating a BulletProf MS 2024.
+
 #### 👨‍💻 Full list what has been used:
 [Kafka](https://github.com/segmentio/kafka-go) as messages broker<br/>
 [gRPC](https://github.com/grpc/grpc-go) Go implementation of gRPC<br/>

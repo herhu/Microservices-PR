@@ -1,10 +1,11 @@
 package models
 
 import (
-	"github.com/AleksK1NG/cqrs-microservices/pkg/utils"
-	readerService "github.com/AleksK1NG/cqrs-microservices/reader_service/proto/product_reader"
-	"google.golang.org/protobuf/types/known/timestamppb"
 	"time"
+
+	"github.com/herhu/Microservices-PR/pkg/utils"
+	readerService "github.com/herhu/Microservices-PR/reader_service/proto/product_reader"
+	"google.golang.org/protobuf/types/known/timestamppb"
 )
 
 type Product struct {

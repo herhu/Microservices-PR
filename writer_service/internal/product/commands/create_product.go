@@ -2,18 +2,19 @@ package commands
 
 import (
 	"context"
-	kafkaClient "github.com/AleksK1NG/cqrs-microservices/pkg/kafka"
-	"github.com/AleksK1NG/cqrs-microservices/pkg/logger"
-	"github.com/AleksK1NG/cqrs-microservices/pkg/tracing"
-	kafkaMessages "github.com/AleksK1NG/cqrs-microservices/proto/kafka"
-	"github.com/AleksK1NG/cqrs-microservices/writer_service/config"
-	"github.com/AleksK1NG/cqrs-microservices/writer_service/internal/models"
-	"github.com/AleksK1NG/cqrs-microservices/writer_service/internal/product/repository"
-	"github.com/AleksK1NG/cqrs-microservices/writer_service/mappers"
+	"time"
+
+	kafkaClient "github.com/herhu/Microservices-PR/pkg/kafka"
+	"github.com/herhu/Microservices-PR/pkg/logger"
+	"github.com/herhu/Microservices-PR/pkg/tracing"
+	kafkaMessages "github.com/herhu/Microservices-PR/proto/kafka"
+	"github.com/herhu/Microservices-PR/writer_service/config"
+	"github.com/herhu/Microservices-PR/writer_service/internal/models"
+	"github.com/herhu/Microservices-PR/writer_service/internal/product/repository"
+	"github.com/herhu/Microservices-PR/writer_service/mappers"
 	"github.com/opentracing/opentracing-go"
 	"github.com/segmentio/kafka-go"
 	"google.golang.org/protobuf/proto"
-	"time"
 )
 
 type CreateProductCmdHandler interface {

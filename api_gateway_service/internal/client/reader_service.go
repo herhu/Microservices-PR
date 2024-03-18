@@ -2,13 +2,14 @@ package client
 
 import (
 	"context"
-	"github.com/AleksK1NG/cqrs-microservices/api_gateway_service/config"
-	"github.com/AleksK1NG/cqrs-microservices/pkg/interceptors"
+	"time"
+
 	grpc_retry "github.com/grpc-ecosystem/go-grpc-middleware/retry"
+	"github.com/herhu/Microservices-PR/api_gateway_service/config"
+	"github.com/herhu/Microservices-PR/pkg/interceptors"
 	"github.com/pkg/errors"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
-	"time"
 )
 
 const (

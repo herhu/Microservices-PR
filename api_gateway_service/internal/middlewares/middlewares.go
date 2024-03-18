@@ -1,11 +1,12 @@
 package middlewares
 
 import (
-	"github.com/AleksK1NG/cqrs-microservices/api_gateway_service/config"
-	"github.com/AleksK1NG/cqrs-microservices/pkg/logger"
-	"github.com/labstack/echo/v4"
 	"strings"
 	"time"
+
+	"github.com/herhu/Microservices-PR/api_gateway_service/config"
+	"github.com/herhu/Microservices-PR/pkg/logger"
+	"github.com/labstack/echo/v4"
 )
 
 type MiddlewareManager interface {

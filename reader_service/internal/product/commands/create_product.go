@@ -2,10 +2,11 @@ package commands
 
 import (
 	"context"
-	"github.com/AleksK1NG/cqrs-microservices/pkg/logger"
-	"github.com/AleksK1NG/cqrs-microservices/reader_service/config"
-	"github.com/AleksK1NG/cqrs-microservices/reader_service/internal/models"
-	"github.com/AleksK1NG/cqrs-microservices/reader_service/internal/product/repository"
+
+	"github.com/herhu/Microservices-PR/pkg/logger"
+	"github.com/herhu/Microservices-PR/reader_service/config"
+	"github.com/herhu/Microservices-PR/reader_service/internal/models"
+	"github.com/herhu/Microservices-PR/reader_service/internal/product/repository"
 	"github.com/opentracing/opentracing-go"
 )
 

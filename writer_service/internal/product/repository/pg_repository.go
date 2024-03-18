@@ -2,9 +2,10 @@ package repository
 
 import (
 	"context"
-	"github.com/AleksK1NG/cqrs-microservices/pkg/logger"
-	"github.com/AleksK1NG/cqrs-microservices/writer_service/config"
-	"github.com/AleksK1NG/cqrs-microservices/writer_service/internal/models"
+
+	"github.com/herhu/Microservices-PR/pkg/logger"
+	"github.com/herhu/Microservices-PR/writer_service/config"
+	"github.com/herhu/Microservices-PR/writer_service/internal/models"
 	"github.com/jackc/pgx/v4/pgxpool"
 	"github.com/opentracing/opentracing-go"
 	"github.com/pkg/errors"

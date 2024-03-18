@@ -2,23 +2,24 @@ package server
 
 import (
 	"context"
-	"github.com/AleksK1NG/cqrs-microservices/api_gateway_service/config"
-	"github.com/AleksK1NG/cqrs-microservices/api_gateway_service/internal/client"
-	"github.com/AleksK1NG/cqrs-microservices/api_gateway_service/internal/metrics"
-	"github.com/AleksK1NG/cqrs-microservices/api_gateway_service/internal/middlewares"
-	v1 "github.com/AleksK1NG/cqrs-microservices/api_gateway_service/internal/products/delivery/http/v1"
-	"github.com/AleksK1NG/cqrs-microservices/api_gateway_service/internal/products/service"
-	"github.com/AleksK1NG/cqrs-microservices/pkg/interceptors"
-	"github.com/AleksK1NG/cqrs-microservices/pkg/kafka"
-	"github.com/AleksK1NG/cqrs-microservices/pkg/logger"
-	"github.com/AleksK1NG/cqrs-microservices/pkg/tracing"
-	readerService "github.com/AleksK1NG/cqrs-microservices/reader_service/proto/product_reader"
-	"github.com/go-playground/validator"
-	"github.com/labstack/echo/v4"
-	"github.com/opentracing/opentracing-go"
 	"os"
 	"os/signal"
 	"syscall"
+
+	"github.com/go-playground/validator"
+	"github.com/herhu/Microservices-PR/api_gateway_service/config"
+	"github.com/herhu/Microservices-PR/api_gateway_service/internal/client"
+	"github.com/herhu/Microservices-PR/api_gateway_service/internal/metrics"
+	"github.com/herhu/Microservices-PR/api_gateway_service/internal/middlewares"
+	v1 "github.com/herhu/Microservices-PR/api_gateway_service/internal/products/delivery/http/v1"
+	"github.com/herhu/Microservices-PR/api_gateway_service/internal/products/service"
+	"github.com/herhu/Microservices-PR/pkg/interceptors"
+	"github.com/herhu/Microservices-PR/pkg/kafka"
+	"github.com/herhu/Microservices-PR/pkg/logger"
+	"github.com/herhu/Microservices-PR/pkg/tracing"
+	readerService "github.com/herhu/Microservices-PR/reader_service/proto/product_reader"
+	"github.com/labstack/echo/v4"
+	"github.com/opentracing/opentracing-go"
 )
 
 type server struct {

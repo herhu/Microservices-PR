@@ -2,10 +2,11 @@ package main
 
 import (
 	"flag"
-	"github.com/AleksK1NG/cqrs-microservices/pkg/logger"
-	"github.com/AleksK1NG/cqrs-microservices/reader_service/config"
-	"github.com/AleksK1NG/cqrs-microservices/reader_service/internal/server"
 	"log"
+
+	"github.com/herhu/Microservices-PR/pkg/logger"
+	"github.com/herhu/Microservices-PR/reader_service/config"
+	"github.com/herhu/Microservices-PR/reader_service/internal/server"
 )
 
 func main() {

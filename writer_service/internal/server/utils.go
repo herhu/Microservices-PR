@@ -2,18 +2,19 @@ package server
 
 import (
 	"context"
-	"github.com/AleksK1NG/cqrs-microservices/pkg/constants"
-	kafkaClient "github.com/AleksK1NG/cqrs-microservices/pkg/kafka"
+	"net"
+	"net/http"
+	"strconv"
+	"time"
+
 	"github.com/heptiolabs/healthcheck"
+	"github.com/herhu/Microservices-PR/pkg/constants"
+	kafkaClient "github.com/herhu/Microservices-PR/pkg/kafka"
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
 	"github.com/pkg/errors"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"github.com/segmentio/kafka-go"
-	"net"
-	"net/http"
-	"strconv"
-	"time"
 )
 
 const (

@@ -1,12 +1,12 @@
 package service
 
 import (
-	kafkaClient "github.com/AleksK1NG/cqrs-microservices/pkg/kafka"
-	"github.com/AleksK1NG/cqrs-microservices/pkg/logger"
-	"github.com/AleksK1NG/cqrs-microservices/writer_service/config"
-	"github.com/AleksK1NG/cqrs-microservices/writer_service/internal/product/commands"
-	"github.com/AleksK1NG/cqrs-microservices/writer_service/internal/product/queries"
-	"github.com/AleksK1NG/cqrs-microservices/writer_service/internal/product/repository"
+	kafkaClient "github.com/herhu/Microservices-PR/pkg/kafka"
+	"github.com/herhu/Microservices-PR/pkg/logger"
+	"github.com/herhu/Microservices-PR/writer_service/config"
+	"github.com/herhu/Microservices-PR/writer_service/internal/product/commands"
+	"github.com/herhu/Microservices-PR/writer_service/internal/product/queries"
+	"github.com/herhu/Microservices-PR/writer_service/internal/product/repository"
 )
 
 type ProductService struct {

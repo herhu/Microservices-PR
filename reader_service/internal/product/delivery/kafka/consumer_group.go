@@ -2,13 +2,14 @@ package kafka
 
 import (
 	"context"
-	"github.com/AleksK1NG/cqrs-microservices/pkg/logger"
-	"github.com/AleksK1NG/cqrs-microservices/reader_service/config"
-	"github.com/AleksK1NG/cqrs-microservices/reader_service/internal/metrics"
-	"github.com/AleksK1NG/cqrs-microservices/reader_service/internal/product/service"
-	"github.com/go-playground/validator"
-	"github.com/segmentio/kafka-go"
 	"sync"
+
+	"github.com/go-playground/validator"
+	"github.com/herhu/Microservices-PR/pkg/logger"
+	"github.com/herhu/Microservices-PR/reader_service/config"
+	"github.com/herhu/Microservices-PR/reader_service/internal/metrics"
+	"github.com/herhu/Microservices-PR/reader_service/internal/product/service"
+	"github.com/segmentio/kafka-go"
 )
 
 const (

@@ -1,23 +1,24 @@
 package v1
 
 import (
-	"github.com/AleksK1NG/cqrs-microservices/api_gateway_service/config"
-	"github.com/AleksK1NG/cqrs-microservices/api_gateway_service/internal/dto"
-	"github.com/AleksK1NG/cqrs-microservices/api_gateway_service/internal/metrics"
-	"github.com/AleksK1NG/cqrs-microservices/api_gateway_service/internal/middlewares"
-	"github.com/AleksK1NG/cqrs-microservices/api_gateway_service/internal/products/commands"
-	"github.com/AleksK1NG/cqrs-microservices/api_gateway_service/internal/products/queries"
-	"github.com/AleksK1NG/cqrs-microservices/api_gateway_service/internal/products/service"
-	"github.com/AleksK1NG/cqrs-microservices/pkg/constants"
-	httpErrors "github.com/AleksK1NG/cqrs-microservices/pkg/http_errors"
-	"github.com/AleksK1NG/cqrs-microservices/pkg/logger"
-	"github.com/AleksK1NG/cqrs-microservices/pkg/tracing"
-	"github.com/AleksK1NG/cqrs-microservices/pkg/utils"
+	"net/http"
+
 	"github.com/go-playground/validator"
+	"github.com/herhu/Microservices-PR/api_gateway_service/config"
+	"github.com/herhu/Microservices-PR/api_gateway_service/internal/dto"
+	"github.com/herhu/Microservices-PR/api_gateway_service/internal/metrics"
+	"github.com/herhu/Microservices-PR/api_gateway_service/internal/middlewares"
+	"github.com/herhu/Microservices-PR/api_gateway_service/internal/products/commands"
+	"github.com/herhu/Microservices-PR/api_gateway_service/internal/products/queries"
+	"github.com/herhu/Microservices-PR/api_gateway_service/internal/products/service"
+	"github.com/herhu/Microservices-PR/pkg/constants"
+	httpErrors "github.com/herhu/Microservices-PR/pkg/http_errors"
+	"github.com/herhu/Microservices-PR/pkg/logger"
+	"github.com/herhu/Microservices-PR/pkg/tracing"
+	"github.com/herhu/Microservices-PR/pkg/utils"
 	"github.com/labstack/echo/v4"
 	"github.com/opentracing/opentracing-go"
 	uuid "github.com/satori/go.uuid"
-	"net/http"
 )
 
 type productsHandlers struct {

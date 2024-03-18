@@ -1,9 +1,9 @@
 package mappers
 
 import (
-	kafkaMessages "github.com/AleksK1NG/cqrs-microservices/proto/kafka"
-	"github.com/AleksK1NG/cqrs-microservices/writer_service/internal/models"
-	writerService "github.com/AleksK1NG/cqrs-microservices/writer_service/proto/product_writer"
+	kafkaMessages "github.com/herhu/Microservices-PR/proto/kafka"
+	"github.com/herhu/Microservices-PR/writer_service/internal/models"
+	writerService "github.com/herhu/Microservices-PR/writer_service/proto/product_writer"
 	uuid "github.com/satori/go.uuid"
 	"google.golang.org/protobuf/types/known/timestamppb"
 )

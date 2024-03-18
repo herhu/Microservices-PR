@@ -1,8 +1,9 @@
 package dto
 
 import (
-	readerService "github.com/AleksK1NG/cqrs-microservices/reader_service/proto/product_reader"
 	"time"
+
+	readerService "github.com/herhu/Microservices-PR/reader_service/proto/product_reader"
 )
 
 type ProductResponse struct {

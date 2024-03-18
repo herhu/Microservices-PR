@@ -2,10 +2,11 @@ package main
 
 import (
 	"flag"
-	"github.com/AleksK1NG/cqrs-microservices/api_gateway_service/config"
-	"github.com/AleksK1NG/cqrs-microservices/api_gateway_service/internal/server"
-	"github.com/AleksK1NG/cqrs-microservices/pkg/logger"
 	"log"
+
+	"github.com/herhu/Microservices-PR/api_gateway_service/config"
+	"github.com/herhu/Microservices-PR/api_gateway_service/internal/server"
+	"github.com/herhu/Microservices-PR/pkg/logger"
 )
 
 // @contact.name Alexander Bryksin

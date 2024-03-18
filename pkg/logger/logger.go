@@ -1,11 +1,12 @@
 package logger
 
 import (
-	"github.com/AleksK1NG/cqrs-microservices/pkg/constants"
-	"go.uber.org/zap"
-	"go.uber.org/zap/zapcore"
 	"os"
 	"time"
+
+	"github.com/herhu/Microservices-PR/pkg/constants"
+	"go.uber.org/zap"
+	"go.uber.org/zap/zapcore"
 )
 
 type Config struct {

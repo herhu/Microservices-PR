@@ -2,7 +2,8 @@ package kafka
 
 import (
 	"context"
-	"github.com/AleksK1NG/cqrs-microservices/pkg/logger"
+
+	"github.com/herhu/Microservices-PR/pkg/logger"
 	"github.com/segmentio/kafka-go"
 )
 

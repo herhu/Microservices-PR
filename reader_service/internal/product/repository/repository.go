@@ -2,8 +2,9 @@ package repository
 
 import (
 	"context"
-	"github.com/AleksK1NG/cqrs-microservices/pkg/utils"
-	"github.com/AleksK1NG/cqrs-microservices/reader_service/internal/models"
+
+	"github.com/herhu/Microservices-PR/pkg/utils"
+	"github.com/herhu/Microservices-PR/reader_service/internal/models"
 	uuid "github.com/satori/go.uuid"
 )
 

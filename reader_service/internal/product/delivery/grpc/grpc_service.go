@@ -2,21 +2,22 @@ package grpc
 
 import (
 	"context"
-	"github.com/AleksK1NG/cqrs-microservices/pkg/logger"
-	"github.com/AleksK1NG/cqrs-microservices/pkg/tracing"
-	"github.com/AleksK1NG/cqrs-microservices/pkg/utils"
-	"github.com/AleksK1NG/cqrs-microservices/reader_service/config"
-	"github.com/AleksK1NG/cqrs-microservices/reader_service/internal/metrics"
-	"github.com/AleksK1NG/cqrs-microservices/reader_service/internal/models"
-	"github.com/AleksK1NG/cqrs-microservices/reader_service/internal/product/commands"
-	"github.com/AleksK1NG/cqrs-microservices/reader_service/internal/product/queries"
-	"github.com/AleksK1NG/cqrs-microservices/reader_service/internal/product/service"
-	"github.com/AleksK1NG/cqrs-microservices/reader_service/proto/product_reader"
+	"time"
+
 	"github.com/go-playground/validator"
+	"github.com/herhu/Microservices-PR/pkg/logger"
+	"github.com/herhu/Microservices-PR/pkg/tracing"
+	"github.com/herhu/Microservices-PR/pkg/utils"
+	"github.com/herhu/Microservices-PR/reader_service/config"
+	"github.com/herhu/Microservices-PR/reader_service/internal/metrics"
+	"github.com/herhu/Microservices-PR/reader_service/internal/models"
+	"github.com/herhu/Microservices-PR/reader_service/internal/product/commands"
+	"github.com/herhu/Microservices-PR/reader_service/internal/product/queries"
+	"github.com/herhu/Microservices-PR/reader_service/internal/product/service"
+	readerService "github.com/herhu/Microservices-PR/reader_service/proto/product_reader"
 	uuid "github.com/satori/go.uuid"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
-	"time"
 )
 
 type grpcService struct {

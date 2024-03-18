@@ -3,17 +3,18 @@ package config
 import (
 	"flag"
 	"fmt"
-	"github.com/AleksK1NG/cqrs-microservices/pkg/constants"
-	kafkaClient "github.com/AleksK1NG/cqrs-microservices/pkg/kafka"
-	"github.com/AleksK1NG/cqrs-microservices/pkg/logger"
-	"github.com/AleksK1NG/cqrs-microservices/pkg/mongodb"
-	"github.com/AleksK1NG/cqrs-microservices/pkg/postgres"
-	"github.com/AleksK1NG/cqrs-microservices/pkg/probes"
-	"github.com/AleksK1NG/cqrs-microservices/pkg/redis"
-	"github.com/AleksK1NG/cqrs-microservices/pkg/tracing"
+	"os"
+
+	"github.com/herhu/Microservices-PR/pkg/constants"
+	kafkaClient "github.com/herhu/Microservices-PR/pkg/kafka"
+	"github.com/herhu/Microservices-PR/pkg/logger"
+	"github.com/herhu/Microservices-PR/pkg/mongodb"
+	"github.com/herhu/Microservices-PR/pkg/postgres"
+	"github.com/herhu/Microservices-PR/pkg/probes"
+	"github.com/herhu/Microservices-PR/pkg/redis"
+	"github.com/herhu/Microservices-PR/pkg/tracing"
 	"github.com/pkg/errors"
 	"github.com/spf13/viper"
-	"os"
 )
 
 var configPath string

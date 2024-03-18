@@ -1,14 +1,15 @@
 package server
 
 import (
-	grpc2 "github.com/AleksK1NG/cqrs-microservices/writer_service/internal/product/delivery/grpc"
-	writerService "github.com/AleksK1NG/cqrs-microservices/writer_service/proto/product_writer"
+	"net"
+	"time"
+
+	grpc2 "github.com/herhu/Microservices-PR/writer_service/internal/product/delivery/grpc"
+	writerService "github.com/herhu/Microservices-PR/writer_service/proto/product_writer"
 	"github.com/pkg/errors"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/keepalive"
 	"google.golang.org/grpc/reflection"
-	"net"
-	"time"
 
 	grpc_middleware "github.com/grpc-ecosystem/go-grpc-middleware"
 	grpc_recovery "github.com/grpc-ecosystem/go-grpc-middleware/recovery"

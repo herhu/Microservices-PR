@@ -2,11 +2,12 @@ package queries
 
 import (
 	"context"
-	"github.com/AleksK1NG/cqrs-microservices/api_gateway_service/config"
-	"github.com/AleksK1NG/cqrs-microservices/api_gateway_service/internal/dto"
-	"github.com/AleksK1NG/cqrs-microservices/pkg/logger"
-	"github.com/AleksK1NG/cqrs-microservices/pkg/tracing"
-	readerService "github.com/AleksK1NG/cqrs-microservices/reader_service/proto/product_reader"
+
+	"github.com/herhu/Microservices-PR/api_gateway_service/config"
+	"github.com/herhu/Microservices-PR/api_gateway_service/internal/dto"
+	"github.com/herhu/Microservices-PR/pkg/logger"
+	"github.com/herhu/Microservices-PR/pkg/tracing"
+	readerService "github.com/herhu/Microservices-PR/reader_service/proto/product_reader"
 	"github.com/opentracing/opentracing-go"
 )
 

@@ -1,7 +1,7 @@
 package commands
 
 import (
-	"github.com/AleksK1NG/cqrs-microservices/api_gateway_service/internal/dto"
+	"github.com/herhu/Microservices-PR/api_gateway_service/internal/dto"
 	uuid "github.com/satori/go.uuid"
 )
 

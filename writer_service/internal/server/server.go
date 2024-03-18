@@ -2,24 +2,25 @@ package server
 
 import (
 	"context"
-	"github.com/AleksK1NG/cqrs-microservices/pkg/interceptors"
-	kafkaClient "github.com/AleksK1NG/cqrs-microservices/pkg/kafka"
-	"github.com/AleksK1NG/cqrs-microservices/pkg/logger"
-	"github.com/AleksK1NG/cqrs-microservices/pkg/postgres"
-	"github.com/AleksK1NG/cqrs-microservices/pkg/tracing"
-	"github.com/AleksK1NG/cqrs-microservices/writer_service/config"
-	"github.com/AleksK1NG/cqrs-microservices/writer_service/internal/metrics"
-	kafkaConsumer "github.com/AleksK1NG/cqrs-microservices/writer_service/internal/product/delivery/kafka"
-	"github.com/AleksK1NG/cqrs-microservices/writer_service/internal/product/repository"
-	"github.com/AleksK1NG/cqrs-microservices/writer_service/internal/product/service"
+	"os"
+	"os/signal"
+	"syscall"
+
 	"github.com/go-playground/validator"
+	"github.com/herhu/Microservices-PR/pkg/interceptors"
+	kafkaClient "github.com/herhu/Microservices-PR/pkg/kafka"
+	"github.com/herhu/Microservices-PR/pkg/logger"
+	"github.com/herhu/Microservices-PR/pkg/postgres"
+	"github.com/herhu/Microservices-PR/pkg/tracing"
+	"github.com/herhu/Microservices-PR/writer_service/config"
+	"github.com/herhu/Microservices-PR/writer_service/internal/metrics"
+	kafkaConsumer "github.com/herhu/Microservices-PR/writer_service/internal/product/delivery/kafka"
+	"github.com/herhu/Microservices-PR/writer_service/internal/product/repository"
+	"github.com/herhu/Microservices-PR/writer_service/internal/product/service"
 	"github.com/jackc/pgx/v4/pgxpool"
 	"github.com/opentracing/opentracing-go"
 	"github.com/pkg/errors"
 	"github.com/segmentio/kafka-go"
-	"os"
-	"os/signal"
-	"syscall"
 )
 
 type server struct {
