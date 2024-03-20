@@ -9,9 +9,6 @@ import (
 	"github.com/herhu/Microservices-PR/pkg/logger"
 )
 
-// @contact.name Alexander Bryksin
-// @contact.url https://github.com/AleksK1NG
-// @contact.email alexander.bryksin@yandex.ru
 func main() {
 	flag.Parse()
 
